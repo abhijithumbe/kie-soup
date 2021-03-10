@@ -14,20 +14,20 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.kie</groupId>
     <artifactId>kie-parent</artifactId>
-    <version>7.48.1.20210308-prod</version>
+    <version>7.48.0.Final-redhat-00006</version>
     <!-- Keep in sync with the parent version of kie-soup-bom/pom.xml -->
   </parent>
 
   <groupId>org.kie.soup</groupId>
   <artifactId>kie-soup-parent</artifactId>
   <packaging>pom</packaging>
+  <version>7.48.0.Final-redhat-00006</version>
 
   <name>KIE Soup parent</name>
   <description>
@@ -50,7 +50,7 @@
   <properties>
     <!-- Required since support for ELS 2.x. Keep in sync with kie-parent or remove when those
           two versions are being updated on the IP BOM.-->
-    <version.com.googlecode.jsonsimple>1.1.1</version.com.googlecode.jsonsimple>
+    <version.com.googlecode.jsonsimple>1.1.1.redhat-1</version.com.googlecode.jsonsimple>
     <version.org.elasticsearch>5.6.1</version.org.elasticsearch>
     <version.org.apache.lucene>6.6.1</version.org.apache.lucene>
     <version.com.github.tdomzal.junit.docker>0.3</version.com.github.tdomzal.junit.docker>
@@ -58,32 +58,10 @@
   </properties>
 
   <repositories>
-    <repository>
-      <id>jboss-public-repository-group</id>
-      <name>JBoss Public Repository Group</name>
-      <url>https://repository.jboss.org/nexus/content/groups/public/</url>
-      <releases>
-        <enabled>true</enabled>
-        <updatePolicy>never</updatePolicy>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-        <updatePolicy>daily</updatePolicy>
-      </snapshots>
-    </repository>
+    
   </repositories>
   <pluginRepositories>
-    <pluginRepository>
-      <id>jboss-public-repository-group</id>
-      <name>JBoss Public Repository Group</name>
-      <url>https://repository.jboss.org/nexus/content/groups/public/</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </pluginRepository>
+    
   </pluginRepositories>
 
   <scm>
@@ -435,7 +413,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore/>
+                    <ignore />
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -448,7 +426,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <execute/>
+                    <execute />
                   </action>
                 </pluginExecution>
               </pluginExecutions>
@@ -549,7 +527,7 @@
       <dependency>
         <groupId>org.kie.soup</groupId>
         <artifactId>kie-soup-bom</artifactId>
-        <version>${project.version}</version>
+        <version>7.48.0.Final-redhat-00006</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -693,3 +671,6 @@
   </profiles>
 
 </project>
+<!--
+Modified by POM Manipulation Extension for Maven 4.2 ( SHA: cfe5b3db )
+-->
