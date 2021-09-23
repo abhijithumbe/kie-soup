@@ -24,6 +24,7 @@
   </parent>
 
   <artifactId>kie-soup-dataset-sql</artifactId>
+  <version>7.48.0.Final-redhat-00006-RHPAM-3913</version>
   <packaging>jar</packaging>
 
   <name>KIE Soup Dataset SQL Provider</name>
